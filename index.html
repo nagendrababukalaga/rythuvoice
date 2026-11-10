@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="te">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RythuVoice</title>
+  <meta name="description" content="RythuVoice – A Telugu voice-based crop help assistant for farmers." />
+  <link rel="stylesheet" href="static/style.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🌾 RythuVoice</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Main Heading -->
+    <h2>Your Voice, Your Crop Assistant</h2>
+
+    <!-- Telugu Welcome Message -->
+    <p>స్వాగతం! మీ పంట సమస్యలకు సమాధానం పొందండి. మీ గొంతుతో మాట్లాడండి.</p>
+
+    <!-- Microphone Button -->
+    <section>
+      <h3>Voice Input</h3>
+      <button type="button" id="mic-btn">🎙️ Start Speaking</button>
+    </section>
+
+    <!-- Audio Upload -->
+    <section>
+      <h3>Upload Audio</h3>
+      <label for="audio-upload">Upload an audio file:</label>
+      <input type="file" id="audio-upload" name="audio-upload" accept="audio/*" />
+    </section>
+
+    <!-- Question Display Area -->
+    <section>
+      <h3>Your Question</h3>
+      <p id="question-display">Your spoken question will appear here...</p>
+    </section>
+
+    <!-- Answer Display Area -->
+    <section>
+      <h3>Answer</h3>
+      <p id="answer-display">The crop help answer will appear here...</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>RythuVoice &copy; 2026 &mdash; Telugu Farmer Support</p>
+  </footer>
+
+  <!-- Script loaded at the end so the HTML elements exist before JS runs -->
+  <script src="static/script.js"></script>
+
+</body>
+
+</html>
