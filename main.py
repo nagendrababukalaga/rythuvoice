@@ -43,10 +43,16 @@ def find_faq_match(transcript):
 app = FastAPI(title="RythuVoice API", version="2.0")
 
 # --- Step 6: Configure CORS ---
-# Allows browser frontends running on Live Server or other ports to communicate with FastAPI.
+# Allows browser frontends running on Netlify, Live Server, or local ports to communicate with FastAPI.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://elegant-salmiakki-97d25e.netlify.app",
+        "http://127.0.0.1:5500",
+        "http://localhost:5500",
+        "*",
+    ],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )

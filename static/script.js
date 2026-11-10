@@ -9,8 +9,7 @@ var answerDisplay   = document.getElementById("answer-display");
 var audioUpload     = document.getElementById("audio-upload");
 
 // Backend endpoint URL
-var BACKEND_URL = "http://127.0.0.1:8000/upload-audio";
-
+var BACKEND_URL = "https://rythuvoice.onrender.com/upload-audio";
 // --- Step 2: Audio Recording State Variables ---
 var audioContext    = null;
 var mediaStream     = null;
